@@ -1,6 +1,8 @@
-# akttym - AKA *A*dd *c*urrent *t*rack *t*o *y*our *m*usic library
+# akttym - AKA **A**dd **c**urrent **t**rack **t**o **y**our **m**usic library
 
 Akttym is a script which combined with global keyboard shortcut allows to add currently plaing track to "your music" section in Spotify, headlessly.
+
+And yes, there is a typo in title.
 
 ## Getting Started
 
@@ -49,8 +51,6 @@ comming soon
 ## Authors
 
 * **Patryk Galczynski** - [evemorgen](https://github.com/evemorgen)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
