@@ -100,5 +100,8 @@ ENV/
 # mypy
 .mypy_cache/
 
+# vim files
+*.sw[po]
+
 # project specific stuff
 cache
