@@ -18,6 +18,11 @@ Disclaimer: It only works with on-line playback.
 python3 -m pip install akttym
 ```
 
+Until guys from [spotipy](https://github.com/plamere/spotipy/issues/211) release up to date version, one ugly hack is required:
+```
+python3 -m pip install git+https://github.com/plamere/spotipy.git --upgrade
+```
+
 2. It comes with empty `config.yaml`. In order to fill up it with data, run `akttym` for the first time, and it will tell you where the config file is located:
 ```
 python3 -m akttym
