@@ -50,8 +50,14 @@ INFO:root:added Life On Mars? - 2015 Remastered Version to evemorgen's library
 6. Close Automator and navigate to keyboard shortcuts settings [System preferences -> Keyboard -> Shortcuts -> Services]. At the very bottom of services list you should see newly created service. Double click on it and pick any key combination you like (be aware that you could override any of existing shortcuts)
 7. Test it out? Profit?
 
-### Ubuntu
-comming soon
+### ElementaryOS (Gnome)
+1. Enter keyboard settings [System Settings -> Keyboard -> Shortcuts -> custom]
+2. Click on `+` button and add `python3 -m akttym` command
+3. it works?
+
+## Troubleshooting
+#### Everytime I run it, it asks me to paste url again
+Try to `chmod 766 /path/to/script/dir`. Akttym needs write permission to dir where it's locate
 
 ## Authors
 
