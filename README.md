@@ -29,9 +29,9 @@ python3 -m akttym
 WARNING:root:Config is invalid. username key is empty or does not exist.
                    Config file can be found at: /Users/evemorgen/Desktop/akttym/akttym/config.yaml
 ```
-3. Create app at <https://developer.spotify.com>, copy `client_id` and `client_secret` into config file. Don't forget to add your `username` as well
+3. Create app at <https://developer.spotify.com/dashboard>, copy `client_id` and `client_secret` into config file. Don't forget to add your `username` as well
 4. Add `http://localhost` redirect uri your new spotify app [Edit Settings -> Redirect URIs -> ADD]
-5. Run the script once again. This time it should open a website in your browser. Follow displayed instructions (accept Spotify stuff and copy link that was just open, after agreeing to sell your soul, to terminal window).
+5. Run the script once again. This time it should open a website in your browser. Follow instructions displayed in terminal (accept Spotify stuff and copy link that was just open, after agreeing to sell your soul, you're good to go).
 6. After that, everything should work just fine.
 
 ```
@@ -57,7 +57,7 @@ INFO:root:added Life On Mars? - 2015 Remastered Version to evemorgen's library
 
 ## Troubleshooting
 #### Everytime I run it, it asks me to paste url again
-Try to `chmod 766 /path/to/script/dir`. Akttym needs write permission to dir where it's locate
+Try to `chmod 766 /path/to/script/dir`. Akttym needs write permission to dir where it's located
 
 ## Authors
 
