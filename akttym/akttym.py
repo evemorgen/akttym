@@ -21,7 +21,7 @@ def check_config(config, dir_path):
 def akttym():
     SCOPE = 'user-library-modify,user-read-playback-state'
     dir_path = os.path.dirname(os.path.realpath(__file__))
-    config = yaml.load(open(dir_path + '/config.yaml'))
+    config = yaml.safe_load(open(dir_path + '/config.yaml'))
     check_config(config, dir_path)
 
     token = util.prompt_for_user_token(
@@ -29,17 +29,17 @@ def akttym():
         SCOPE,
         client_id=config['client_id'],
         client_secret=config['client_secret'],
-        redirect_uri='http://localhost',
+        redirect_uri='http://localhost:8080/',
         cache_path=dir_path + '/cache'
     )
 
     if token:
         sp = Spotify(auth=token)
         track = sp.current_playback()
-        if track['item'] is not None:
+        if track is not None:
             sp.current_user_saved_tracks_add([track['item']['id']])
-            logging.info("added {} to {}'s library".format(track['item']['name'], config['username']))
+            logging.warning("added %s to %s's library", track['item']['name'], config['username'])
         else:
             logging.warning("nothing is playing currently, aborting")
     else:
-        logging.warning("Can't get token for", config['username'])
+        logging.warning("Can't get token for %s", config['username'])

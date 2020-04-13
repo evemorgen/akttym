@@ -6,7 +6,9 @@ setup(
     package_data={
         'akttym': ['config.yaml']
     },
-    description='Add currently plaing track by Spotify to your music library, headlessly',
+    description='`Akttym` is a simple script placing heart/like/whatever-they-call-it on currently playing track on Spotify, which combined with global keyboard shortcut allows for complete headless setup.',
+    long_description=open('readme.md').read(),
+    long_description_content_type='text/markdown',
     packages=['akttym'],
     entry_points={
         'console_scripts': [
@@ -14,10 +16,7 @@ setup(
         ]
     },
     install_requires=[
-        'pyyaml',
-        'spotipy'
+        'pyyaml==5.3.1',
+        'spotipy==2.11.1'
     ],
-    dependency_links=[
-        "git+https://github.com/plamere/spotipy.git@4c2c1d763a3653aa225c4af848409ec31286a6bf#egg=spotipy=2.4.4"
-    ]
 )
