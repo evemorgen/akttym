@@ -27,7 +27,7 @@ WARNING:root:Config is invalid. username key is empty or does not exist.
                    Config file can be found at: /Users/evemorgen/Desktop/akttym/akttym/config.yaml
 ```
 3. Create a Spotify app at <https://developer.spotify.com/dashboard> and copy `client_id` and `client_secret` into config file. Don't forget to add your `username` as well.
-4. Add `http://localhost:8080/` redirect uri your new spotify app [Edit Settings -> Redirect URIs -> ADD]. 
+4. Add `http://localhost:1911/` redirect uri your new spotify app [Edit Settings -> Redirect URIs -> ADD]. 
 5. Run the script once again. This time it should open a website in your browser. Accept Spotify privacy stuff, after agreeing to sell your soul, you're good to go.
 6. It just works! (hopefully).
 

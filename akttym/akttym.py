@@ -29,7 +29,7 @@ def akttym():
         SCOPE,
         client_id=config['client_id'],
         client_secret=config['client_secret'],
-        redirect_uri='http://localhost:8080/',
+        redirect_uri='http://localhost:1911/',
         cache_path=dir_path + '/cache'
     )
 
