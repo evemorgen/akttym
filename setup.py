@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='akttym',
-    version='1.0.1',
+    version='1.0.2',
     package_data={
         'akttym': ['config.yaml']
     },
