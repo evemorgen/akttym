@@ -40,7 +40,7 @@ INFO:root:added Life On Mars? - 2015 Remastered Version to evemorgen's library
 
 ### MacOS
 1. Search for `Automator` app and open it. 
-2. Create new service [Service -> Choose]
+2. Create new service [Qucik Action (Service) -> Choose]
 3. Drag and drop `run shell script` to workflow window
 4. Select `no input` in `Service receives` dropdown and fill in command textbox with `python3 -m akttym`
 5. Save created service (`Cmd+S` or [File -> Save]) with name `akttym`
