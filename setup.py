@@ -17,6 +17,6 @@ setup(
     },
     install_requires=[
         'pyyaml==5.3.1',
-        'spotipy==2.11.1'
+        'spotipy==2.22.1'
     ],
 )
